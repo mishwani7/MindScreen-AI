@@ -96,10 +96,10 @@ class AIService {
       config.apiKey
     ].filter(key => key && key.trim() !== '' && key !== 'your_github_models_api_key_here')
 
-    // Define available models in priority order
+    // Define available models in priority order (GPT-4 first for production reliability)
     this.models = [
-      'deepseek/DeepSeek-V3-0324',
-      'openai/gpt-4.1'
+      'openai/gpt-4o',
+      'deepseek/DeepSeek-V3-0324'
     ]
 
     this.config = {
@@ -112,7 +112,7 @@ class AIService {
     
     // AI Service initialized with multi-key and multi-model fallback support
     console.log(`AI Service initialized with ${this.apiKeys.length} API keys and ${this.models.length} models`)
-    console.log(`Primary model: ${this.config.model}, Backup model: ${this.config.backupModel}`)
+    console.log(`Primary model: ${this.config.model} (GPT-4), Backup model: ${this.config.backupModel} (DeepSeek-V3)`)
   }
 
   private getCurrentModel(): string {

@@ -2,7 +2,7 @@
 
 **AI-Powered Mental Health Screening Platform**
 
-A comprehensive, professional-grade mental health screening platform that combines clinically validated assessment tools with AI-powered analysis using DeepSeek-V3-0324 via GitHub Models.
+A comprehensive, professional-grade mental health screening platform that combines clinically validated assessment tools with AI-powered analysis using GPT-4o and DeepSeek-V3 via GitHub Models.
 
 ![MindScreen AI](https://img.shields.io/badge/Status-Live-green)
 ![React](https://img.shields.io/badge/React-19+-blue)
@@ -10,10 +10,16 @@ A comprehensive, professional-grade mental health screening platform that combin
 ![Tailwind](https://img.shields.io/badge/Tailwind-4+-blue)
 ![Vercel](https://img.shields.io/badge/Deployed-Vercel-black)
 
+## 🌐 Live Preview
+
+🚀 **[Visit MindScreen AI](https://mindscreen-ai.vercel.app)** - Experience the live platform
+
+> **Note**: Live preview will be available after Vercel deployment. The platform includes the fully functional PHQ-9 depression screener with AI-powered analysis.
+
 ## ✨ Current Features
 
 - **🔬 PHQ-9 Depression Screening**: Fully implemented, clinically validated assessment
-- **🤖 AI-Powered Analysis**: Advanced interpretation using DeepSeek-V3-0324
+- **🤖 AI-Powered Analysis**: Advanced interpretation using GPT-4o and DeepSeek-V3 models
 - **📊 Instant Results**: Real-time scoring with severity classification
 - **📄 PDF Reports**: Downloadable comprehensive assessment reports
 - **🔒 Privacy-First**: No data stored on servers, HIPAA-conscious design
@@ -29,7 +35,7 @@ A comprehensive, professional-grade mental health screening platform that combin
 - **Forms**: React Hook Form + Zod validation
 - **Routing**: React Router DOM
 - **Icons**: Lucide React
-- **AI**: DeepSeek-V3-0324 via GitHub Models API
+- **AI**: GPT-4o (Primary) + DeepSeek-V3 (Backup) via GitHub Models API
 - **PDF Generation**: React PDF Renderer
 - **Deployment**: Vercel with automatic CI/CD
 
@@ -90,13 +96,14 @@ A comprehensive, professional-grade mental health screening platform that combin
 
 ## 🤖 AI Integration
 
-MindScreen AI uses **DeepSeek-V3-0324** via GitHub Models to provide:
+MindScreen AI uses **GPT-4o (Primary)** and **DeepSeek-V3 (Backup)** via GitHub Models to provide:
 
 - **Personalized Analysis**: Deep interpretation of assessment results
 - **Custom Recommendations**: Tailored suggestions based on response patterns
 - **Risk Assessment**: AI-identified risk and protective factors
 - **Professional Referral Guidance**: Smart recommendations for seeking help
 - **Support Resources**: Curated resources based on individual needs
+- **Multi-Model Reliability**: Automatic fallback between AI models for consistent service
 
 **Note**: AI features require a GitHub Models API key. The platform works fully without AI, but provides enhanced insights when configured.
 
@@ -203,18 +210,21 @@ This project is configured for automatic deployment on Vercel:
 ## 🛣 Roadmap
 
 ### Phase 1: Foundation (✅ Complete)
+
 - PHQ-9 Depression Screening
-- AI Integration with DeepSeek-V3
+- AI Integration with GPT-4o and DeepSeek-V3
 - Modern UI with ShadCN components
 - PDF Report generation
 - Location-based services
 
 ### Phase 2: Expansion (🚧 Current)
+
 - GAD-7 Anxiety Assessment
 - Enhanced AI analysis
 - User experience improvements
 
 ### Phase 3: Comprehensive Platform
+
 - Complete suite of 8 mental health screeners
 - Advanced analytics and insights
 - Multi-language support
