@@ -103,7 +103,7 @@ MindScreen AI uses **GPT-4o (Primary)** and **DeepSeek-V3 (Backup)** via GitHub 
 - **Support Resources**: Curated resources based on individual needs
 - **Multi-Model Reliability**: Automatic fallback between AI models for consistent service
 
-**Note**: AI features require a GitHub Models API key. The platform works fully without AI, but provides enhanced insights when configured.
+**Note**: AI features require a GitHub Models API key. The platform works fully without AI using demo mode for analysis and insights.
 
 ## 📊 Current Implementation: PHQ-9 Depression Screening
 
