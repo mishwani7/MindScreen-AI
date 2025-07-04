@@ -353,16 +353,15 @@ export default function ScreenersPage() {
         <section className="text-center animate-slide-up mb-16">
           <div className="mb-12">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Trusted by Thousands
+              Platform Features
             </h2>
             <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
-              Join the community using our validated screening tools for better mental health awareness.
+              Built with clinical accuracy and user privacy as our top priorities.
             </p>
           </div>
           
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {[
-              { number: "10,000+", label: "Assessments Completed", icon: Activity, color: "from-blue-500 to-blue-600" },
               { number: "95%", label: "Clinical Accuracy", icon: CheckCircle, color: "from-emerald-500 to-emerald-600" },
               { number: "8", label: "Validated Tools", icon: FileText, color: "from-purple-500 to-purple-600" },
               { number: "24/7", label: "Available Access", icon: Clock, color: "from-amber-500 to-amber-600" }
