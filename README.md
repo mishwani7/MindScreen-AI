@@ -383,7 +383,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙏 Acknowledgments
 
-- **Lead Developer**: [Abu Zar Mishwani](https://github.com/mishwani7) - AI & Mental Health Technology Specialist
+- **Lead Developer**: [Abu Zar Mishwani](https://github.com/mishwani7)
 - Clinical assessment tools developed by mental health professionals
 - ShadCN for the beautiful UI component library
 - GPT-4o and DeepSeek teams for the advanced AI models
@@ -392,7 +392,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Support & Contact
 
 - **GitHub Issues**: [Report bugs or request features](https://github.com/mishwani7/MindScreen-AI/issues)
-- **Email**: abuzarmishwani@mindscreen.ai
+- **Email**: abuzarmishwani742@gmail.com
 - **Developer**: Abu Zar Mishwani
 
 ---

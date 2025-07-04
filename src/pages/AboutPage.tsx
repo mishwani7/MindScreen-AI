@@ -567,7 +567,7 @@ export default function AboutPage() {
                 className="border-2 border-slate-300 bg-white hover:bg-slate-50 dark:bg-slate-800 dark:border-emerald-400 dark:hover:bg-emerald-900/40 dark:hover:border-emerald-300 text-lg px-8 py-6 rounded-2xl font-semibold transition-all duration-300"
               >
                 <a 
-                  href="https://github.com/abuzarmishwani/mindscreen-ai" 
+                  href="https://github.com/mishwani7/MindScreen-AI" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-slate-900 hover:text-slate-900 dark:text-emerald-100 dark:hover:text-emerald-50 flex items-center justify-center"
