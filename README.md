@@ -17,6 +17,15 @@ A comprehensive, professional-grade mental health screening platform that combin
 
 🚀 **[Visit MindScreen AI](https://mind-screen-ai.vercel.app)** - Experience the live platform
 
+### 🚀 Quick Deploy
+
+Deploy your own instance with one click:
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/mishwani7/MindScreen-AI&env=VITE_GITHUB_TOKEN&envDescription=GitHub%20Models%20API%20key%20for%20AI%20features&envLink=https://github.com/marketplace/models)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/mishwani7/MindScreen-AI)
+
+> **Note**: For AI features, add your GitHub Models API key as `VITE_GITHUB_TOKEN` in environment variables.
+
 ## ✨ Features
 
 - **🔬 PHQ-9 Depression Screening**: Fully implemented, clinically validated assessment
@@ -232,7 +241,7 @@ We welcome contributions from developers, mental health professionals, and anyon
 1. **Fork and clone the repository**
 
    ```bash
-   git clone https://github.com/your-username/MindScreen-AI.git
+   git clone https://github.com/mishwani7/MindScreen-AI.git
    cd MindScreen-AI
    ```
 
