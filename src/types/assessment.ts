@@ -30,6 +30,7 @@ export interface RiskAssessment {
   immediateIntervention: boolean
   riskFactors: string[]
   protectiveFactors: string[]
+  overallRisk?: string
   specificRisks: {
     [key: string]: boolean // e.g., suicidalIdeation, selfHarm, etc.
   }
@@ -42,6 +43,7 @@ export interface ActionableTip {
   difficulty: 'easy' | 'moderate' | 'challenging'
   timeframe: string
   evidenceBased: boolean
+  priority?: 'high' | 'medium' | 'low'
 }
 
 export interface FollowUpRecommendation {
@@ -49,6 +51,7 @@ export interface FollowUpRecommendation {
   monitoringFrequency: string
   warningSignsToWatch: string[]
   progressTracking: string[]
+  nextSteps?: string[]
 }
 
 export interface ProfessionalProvider {
@@ -222,6 +225,14 @@ export interface PDFReportData<T extends BaseAssessmentResult> {
 
 // Assessment-specific interfaces that extend the base
 export interface PHQ9Result extends BaseAssessmentResult {
+  depressionLevel: 'minimal' | 'mild' | 'moderate' | 'moderately-severe' | 'severe'
+  scoreBreakdown: DetailedScoreBreakdown[]
+  riskAssessment: RiskAssessment
+  actionableTips: ActionableTip[]
+  followUpRecommendations: FollowUpRecommendation
+  professionalReferrals: ProfessionalProvider[]
+  onlineResources: OnlineResource[]
+  emergencyResources: EmergencyResource[]
   suicidalIdeation: boolean
   functionalImpairment: string
 }

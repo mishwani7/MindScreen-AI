@@ -67,7 +67,28 @@ export class PHQ9Processor extends BaseAssessmentProcessor<PHQ9Result> {
       interpretation,
       recommendations: this.getBasicRecommendations(risk, suicidalIdeation),
       suicidalIdeation,
-      functionalImpairment
+      functionalImpairment,
+      depressionLevel: severity.toLowerCase().replace(' ', '-') as any,
+      scoreBreakdown: [],
+      riskAssessment: {
+        immediateIntervention: suicidalIdeation || totalScore >= 20,
+        riskFactors: suicidalIdeation ? ['Suicidal ideation'] : [],
+        protectiveFactors: [],
+        specificRisks: {
+          suicidalIdeation: suicidalIdeation,
+          selfHarm: suicidalIdeation,
+        }
+      },
+      actionableTips: [],
+      followUpRecommendations: {
+        retakeInWeeks: 2,
+        monitoringFrequency: 'Weekly',
+        warningSignsToWatch: [],
+        progressTracking: []
+      },
+      professionalReferrals: [],
+      onlineResources: [],
+      emergencyResources: []
     }
   }
 

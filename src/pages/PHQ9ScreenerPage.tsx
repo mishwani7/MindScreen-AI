@@ -18,7 +18,7 @@ export default function PHQ9ScreenerPage() {
   const [currentStep, setCurrentStep] = useState(0)
   const [responses, setResponses] = useState<Record<string, number>>({})
   const [basicResult, setBasicResult] = useState<PHQ9Result | null>(null)
-  const [userProfile, setUserProfile] = useState<UserProfile | null>(null)
+  // const [userProfile, setUserProfile] = useState<UserProfile | null>(null) // TODO: Implement user profile
   const [comprehensiveResult, setComprehensiveResult] = useState<ComprehensiveAssessmentResult<BaseAssessmentResult> | null>(null)
   const [isCompleted, setIsCompleted] = useState(false)
   const [showProfileForm, setShowProfileForm] = useState(false)
@@ -41,7 +41,7 @@ export default function PHQ9ScreenerPage() {
   const handleProfileComplete = async (profile: UserProfile) => {
     if (!basicResult) return
     
-    setUserProfile(profile)
+    // setUserProfile(profile) // TODO: Implement user profile
     setIsProcessing(true)
     setShowProfileForm(false)
 
@@ -108,7 +108,7 @@ export default function PHQ9ScreenerPage() {
   const resetAssessment = () => {
     setIsCompleted(false)
     setBasicResult(null)
-    setUserProfile(null)
+    // setUserProfile(null) // TODO: Implement user profile
     setComprehensiveResult(null)
     setShowProfileForm(false)
     setIsProcessing(false)
