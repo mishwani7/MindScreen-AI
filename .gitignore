@@ -61,3 +61,5 @@ test-*.js
 test-*.mjs
 comprehensive-test.js
 quick-ai-test.js
+
+.vercel

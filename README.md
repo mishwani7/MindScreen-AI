@@ -12,9 +12,14 @@ A comprehensive, professional-grade mental health screening platform that combin
 
 ## 🌐 Live Preview
 
-🚀 **[Visit MindScreen AI](https://mindscreen-ai.vercel.app)** - Experience the live platform
+🚀 **[Visit MindScreen AI](https://mind-screen-d3gjk0d4s-abu-zar-mishwanis-projects.vercel.app)** - Experience the live platform
 
-> **Note**: Live preview will be available after Vercel deployment. The platform includes the fully functional PHQ-9 depression screener with AI-powered analysis.
+✨ **Features Available:**
+- ✅ **PHQ-9 Depression Screening**: Complete assessment with AI analysis
+- ✅ **GPT-4o AI Analysis**: Advanced personalized insights
+- ✅ **PDF Reports**: Downloadable comprehensive reports
+- ✅ **Modern UI**: Responsive design with dark mode
+- ✅ **Location Services**: Smart resource recommendations
 
 ## ✨ Current Features
 
