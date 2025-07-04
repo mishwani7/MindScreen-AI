@@ -364,7 +364,7 @@ export default function ScreenersPage() {
             {[
               { number: "10,000+", label: "Assessments Completed", icon: Activity, color: "from-blue-500 to-blue-600" },
               { number: "95%", label: "Clinical Accuracy", icon: CheckCircle, color: "from-emerald-500 to-emerald-600" },
-              { number: "9", label: "Validated Tools", icon: FileText, color: "from-purple-500 to-purple-600" },
+              { number: "8", label: "Validated Tools", icon: FileText, color: "from-purple-500 to-purple-600" },
               { number: "24/7", label: "Available Access", icon: Clock, color: "from-amber-500 to-amber-600" }
             ].map((stat, index) => (
               <Card 

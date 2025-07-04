@@ -352,7 +352,7 @@ src/
 
 - **GitHub Issues**: For bugs and feature requests
 - **GitHub Discussions**: For questions and general discussion
-- **Email**: abuzarmishwani@mindscreen.ai for sensitive matters
+- **Email**: abuzarmishwani742@gmail.com for sensitive matters
 
 ## 🛣 Roadmap
 
