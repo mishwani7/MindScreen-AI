@@ -326,7 +326,7 @@ export default function HomePage() {
             
             <div className="grid sm:grid-cols-3 gap-6 sm:gap-8 text-center">
               {[
-                { number: "9+", label: "Assessment Tools" },
+                { number: "8", label: "Assessment Tools" },
                 { number: "100%", label: "Clinically Validated" },
                 { number: "AI", label: "Powered Insights" }
               ].map((stat, index) => (

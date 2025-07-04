@@ -393,7 +393,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - **GitHub Issues**: [Report bugs or request features](https://github.com/mishwani7/MindScreen-AI/issues)
 - **Email**: abuzarmishwani742@gmail.com
-- **Developer**: Abu Zar Mishwani
 
 ---
 
