@@ -13,18 +13,6 @@ A comprehensive, professional-grade mental health screening platform that combin
 ![TypeScript](https://img.shields.io/badge/TypeScript-5+-blue)
 ![Tailwind](https://img.shields.io/badge/Tailwind-4+-blue)
 
-## 💝 Support This Project
-
-If you find MindScreen AI helpful, please consider supporting its development:
-
-[![GitHub Sponsors](https://img.shields.io/badge/Sponsor-%E2%9D%A4-lightgrey?logo=github)](https://github.com/sponsors/mishwani7)
-[![Buy Me A Coffee](https://img.shields.io/badge/-buy_me_a%C2%A0coffee-gray?logo=buy-me-a-coffee)](https://buymeacoffee.com/mishwani7)
-
-Your support helps maintain and improve this free mental health screening platform.
-![License](https://img.shields.io/badge/License-MIT-yellow)
-![GitHub](https://img.shields.io/github/stars/mishwani7/MindScreen-AI?style=social)
-![Vercel Deploy](https://img.shields.io/github/deployments/mishwani7/MindScreen-AI/production?label=Vercel&logo=vercel)
-
 ## 🌐 Live Preview
 
 🚀 **[Visit MindScreen AI](https://mind-screen-ai.vercel.app)** - Experience the live platform
@@ -373,7 +361,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 💖 Support the Project
 
-If you find MindScreen AI helpful and would like to support its development, consider sponsoring the project! Your support helps:
+If you find MindScreen AI helpful and would like to support its development, consider buying me a coffee! Your support helps:
 
 - 🔧 **Maintain and improve** existing features
 - 🆕 **Develop new screening tools** (GAD-7, ASRS, etc.)
@@ -382,7 +370,7 @@ If you find MindScreen AI helpful and would like to support its development, con
 - 📚 **Create educational resources** and documentation
 - 🔒 **Ensure long-term sustainability** of the platform
 
-[![Sponsor](https://img.shields.io/badge/Sponsor-💖-ff69b4?style=for-the-badge&logo=github-sponsors)](https://github.com/sponsors/mishwani7)
+[![Buy Me A Coffee](https://img.shields.io/badge/-buy_me_a%C2%A0coffee-gray?logo=buy-me-a-coffee&style=for-the-badge)](https://buymeacoffee.com/mishwani7)
 
 Every contribution, no matter the size, makes a meaningful difference in advancing mental health accessibility through technology.
 
