@@ -3,11 +3,11 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
-import { PDFService } from './PDFReport'
+// import { PDFService } from './PDFReport'  // Temporarily commented out
 import { useNotification, Notification } from './Notification'
 import { 
   Brain, 
-  Download, 
+  // Download,  // Temporarily commented out
   Calendar, 
   AlertTriangle, 
   CheckCircle, 
@@ -35,11 +35,11 @@ interface ComprehensiveResultsProps {
   onReset?: () => void
 }
 
-export function ComprehensiveResults({ result, onDownloadPDF, onRetakeAssessment, onReset }: ComprehensiveResultsProps) {
+export function ComprehensiveResults({ result, /* onDownloadPDF, */ onRetakeAssessment, onReset }: ComprehensiveResultsProps) {
   const [activeTab, setActiveTab] = useState('summary')
-  const [isGeneratingPDF, setIsGeneratingPDF] = useState(false)
-  const [pdfStatus, setPdfStatus] = useState<string>('')
-  const { showNotification, notification, clearNotification } = useNotification()
+  // const [isGeneratingPDF, setIsGeneratingPDF] = useState(false)  // Temporarily commented out
+  // const [pdfStatus, setPdfStatus] = useState<string>('')  // Temporarily commented out
+  const { /* showNotification, */ notification, clearNotification } = useNotification()
 
   // Debug logging for professional resources
   console.log('🏥 ComprehensiveResults - Professional Resources:', {
@@ -60,6 +60,7 @@ export function ComprehensiveResults({ result, onDownloadPDF, onRetakeAssessment
     fullProfile: result.userProfile
   })
 
+  /* Temporarily commented out download functionality
   const handleDownloadPDF = async () => {
     if (onDownloadPDF) {
       onDownloadPDF()
@@ -85,6 +86,7 @@ export function ComprehensiveResults({ result, onDownloadPDF, onRetakeAssessment
       }
     }
   }
+  */
 
   const handleRetakeAssessment = () => {
     if (onRetakeAssessment) {
@@ -356,6 +358,8 @@ export function ComprehensiveResults({ result, onDownloadPDF, onRetakeAssessment
             )}
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              {/* Temporarily hidden download button */}
+              {/*
               <Button 
                 onClick={handleDownloadPDF}
                 disabled={isGeneratingPDF}
@@ -365,6 +369,7 @@ export function ComprehensiveResults({ result, onDownloadPDF, onRetakeAssessment
                 <Download className="mr-2 h-5 w-5" />
                 {isGeneratingPDF ? 'Generating PDF...' : 'Download PDF Report'}
               </Button>
+              */}
               <Button 
                 onClick={handleRetakeAssessment}
                 variant="outline"
@@ -376,11 +381,13 @@ export function ComprehensiveResults({ result, onDownloadPDF, onRetakeAssessment
               </Button>
             </div>
             
+            {/* Temporarily commented out PDF status display
             {pdfStatus && (
               <div className="mt-4 text-center">
                 <p className="text-sm text-muted-foreground">{pdfStatus}</p>
               </div>
             )}
+            */}
           </CardContent>
         </Card>
 
