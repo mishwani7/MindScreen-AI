@@ -14,17 +14,10 @@ A comprehensive, professional-grade mental health screening platform that combin
 
 🚀 **[Visit MindScreen AI](https://mind-screen-ai.vercel.app)** - Experience the live platform
 
-✨ **Features Available:**
-- ✅ **PHQ-9 Depression Screening**: Complete assessment with AI analysis
-- ✅ **GPT-4o AI Analysis**: Advanced personalized insights
-- ✅ **PDF Reports**: Downloadable comprehensive reports
-- ✅ **Modern UI**: Responsive design with dark mode
-- ✅ **Location Services**: Smart resource recommendations
-
-## ✨ Current Features
+## ✨ Features
 
 - **🔬 PHQ-9 Depression Screening**: Fully implemented, clinically validated assessment
-- **🤖 AI-Powered Analysis**: Advanced interpretation using GPT-4o and DeepSeek-V3 models
+- **🤖 AI-Powered Analysis**: Advanced interpretation using GPT-4o and DeepSeek-V3 models  
 - **📊 Instant Results**: Real-time scoring with severity classification
 - **📄 PDF Reports**: Downloadable comprehensive assessment reports
 - **🔒 Privacy-First**: No data stored on servers, HIPAA-conscious design
@@ -178,33 +171,15 @@ VITE_GITHUB_TOKEN=your_github_models_api_key_here
 
 This project is configured for automatic deployment on Vercel:
 
-### Quick Deployment Steps
-
 1. **Go to [Vercel](https://vercel.com)**
 2. **Connect GitHub**: Import your GitHub repository `mishwani7/MindScreen-AI`
-3. **Configure Environment Variables** (in Vercel Dashboard):
+3. **Configure Environment Variables** in Vercel Dashboard:
    - `VITE_GITHUB_TOKEN` = Your GitHub Models API key
 4. **Deploy**: Vercel will automatically build and deploy
 
-### Environment Variables Setup
+**AI Configuration**: The platform uses GPT-4o as primary and DeepSeek-V3 as backup for reliability.
 
-In your Vercel dashboard, add:
-
-```env
-VITE_GITHUB_TOKEN=your_github_models_api_key_here
-```
-
-### AI Configuration
-
-The platform uses **GPT-4o as primary** and **DeepSeek-V3 as backup** for reliability:
-
-- Primary AI: GPT-4o (more stable for production)
-- Backup AI: DeepSeek-V3 (automatic fallback)
-- Multi-key support for rate limit handling
-
-### Auto-Deploy Setup
-
-✅ Already configured! Every push to `main` branch triggers automatic deployment.
+✅ **Auto-Deploy**: Every push to `main` branch triggers automatic deployment.
 
 ## 🔒 Privacy & Security
 
@@ -243,7 +218,7 @@ We welcome contributions from developers, mental health professionals, and anyon
 
 ### 🚀 Quick Start for Contributors
 
-#### Prerequisites
+#### Requirements
 
 - Node.js 18+ and npm
 - Git
