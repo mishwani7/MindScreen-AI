@@ -16,7 +16,7 @@ Thank you for your interest in contributing to MindScreen AI! We welcome contrib
 1. **Fork the repository** on GitHub
 2. **Clone your fork locally**:
    ```bash
-   git clone https://github.com/your-username/MindScreen-AI.git
+   git clone https://github.com/mishwani7/MindScreen-AI.git
    cd MindScreen-AI
    ```
 3. **Install dependencies**:
