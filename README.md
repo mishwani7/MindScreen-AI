@@ -12,7 +12,7 @@ A comprehensive, professional-grade mental health screening platform that combin
 
 ## 🌐 Live Preview
 
-🚀 **[Visit MindScreen AI](https://mind-screen-d3gjk0d4s-abu-zar-mishwanis-projects.vercel.app)** - Experience the live platform
+🚀 **[Visit MindScreen AI](https://mind-screen-ai.vercel.app)** - Experience the live platform
 
 ✨ **Features Available:**
 - ✅ **PHQ-9 Depression Screening**: Complete assessment with AI analysis
@@ -174,6 +174,38 @@ VITE_GITHUB_TOKEN=your_github_models_api_key_here
 2. Add the key to your `.env` file
 3. The platform will automatically enable AI features when configured
 
+## 🚀 Deployment
+
+This project is configured for automatic deployment on Vercel:
+
+### Quick Deployment Steps
+
+1. **Go to [Vercel](https://vercel.com)**
+2. **Connect GitHub**: Import your GitHub repository `mishwani7/MindScreen-AI`
+3. **Configure Environment Variables** (in Vercel Dashboard):
+   - `VITE_GITHUB_TOKEN` = Your GitHub Models API key
+4. **Deploy**: Vercel will automatically build and deploy
+
+### Environment Variables Setup
+
+In your Vercel dashboard, add:
+
+```env
+VITE_GITHUB_TOKEN=your_github_models_api_key_here
+```
+
+### AI Configuration
+
+The platform uses **GPT-4o as primary** and **DeepSeek-V3 as backup** for reliability:
+
+- Primary AI: GPT-4o (more stable for production)
+- Backup AI: DeepSeek-V3 (automatic fallback)
+- Multi-key support for rate limit handling
+
+### Auto-Deploy Setup
+
+✅ Already configured! Every push to `main` branch triggers automatic deployment.
+
 ## 🔒 Privacy & Security
 
 - **No Server Storage**: All data processed locally in browser
@@ -200,17 +232,127 @@ All planned screening tools are based on established clinical assessments with p
 This platform is for **educational and informational purposes only**. It is not intended to replace professional medical advice, diagnosis, or treatment. If you're experiencing mental health concerns, please consult with a qualified healthcare provider or mental health professional.
 
 In case of emergency or thoughts of self-harm, please contact:
+
 - **Emergency Services**: 911 (US) or your local emergency number
 - **Crisis Text Line**: Text HOME to 741741
 - **National Suicide Prevention Lifeline**: 988
 
-## 🚀 Deployment
+## 🤝 Contributing
 
-This project is configured for automatic deployment on Vercel:
+We welcome contributions from developers, mental health professionals, and anyone passionate about improving mental health accessibility through technology!
 
-1. **Connect to Vercel**: Link your GitHub repository to Vercel
-2. **Environment Variables**: Add `VITE_GITHUB_TOKEN` in Vercel dashboard
-3. **Auto Deploy**: Every push to main branch triggers automatic deployment
+### 🚀 Quick Start for Contributors
+
+#### Prerequisites
+
+- Node.js 18+ and npm
+- Git
+- Basic knowledge of React, TypeScript, and mental health screening principles
+
+#### Development Setup
+
+1. **Fork and clone the repository**
+
+   ```bash
+   git clone https://github.com/your-username/MindScreen-AI.git
+   cd MindScreen-AI
+   ```
+
+2. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+
+3. **Set up environment variables**
+
+   ```bash
+   cp .env.example .env
+   # Add your GitHub Models API key for AI features
+   ```
+
+4. **Start development server**
+
+   ```bash
+   npm run dev
+   ```
+
+### 🛠 Types of Contributions
+
+#### New Screening Tools
+
+- Implement additional validated assessment tools (GAD-7, ASRS, etc.)
+- Follow existing patterns in `/src/pages/` and `/src/services/`
+- Ensure clinical accuracy and proper scoring
+
+#### AI Enhancement
+
+- Improve AI prompts and response processing
+- Add new AI-powered features
+- Optimize AI integration patterns
+
+#### UI/UX Improvements
+
+- Enhance accessibility features
+- Improve responsive design
+- Add new UI components following ShadCN patterns
+
+### 📋 Development Guidelines
+
+#### Code Standards
+
+- Use TypeScript strict mode with proper typing
+- Follow existing interface patterns in `/src/types/`
+- Use functional components with hooks
+- Follow ShadCN UI component patterns
+- Maintain accessibility standards (WCAG 2.1)
+
+#### Adding New Screeners
+
+Required file structure:
+
+```text
+src/
+├── pages/NewScreenerPage.tsx          # Main component
+├── services/NewScreenerProcessor.ts   # Scoring logic
+├── data/newScreener.ts               # Questions data
+└── types/assessment.ts               # Type definitions
+```
+
+#### Clinical Accuracy Requirements
+
+- Use only validated, published assessment tools
+- Implement exact scoring algorithms from clinical literature
+- Include appropriate disclaimers and safety information
+- Test against known case examples
+
+### 🚦 Contribution Process
+
+1. **Create an issue** for discussion before starting work
+2. **Create a feature branch** from main
+3. **Follow naming convention**: `feature/screener-name`, `fix/issue-description`
+4. **Submit a pull request** with clear description
+
+#### PR Guidelines
+
+- Include clear description of changes
+- Add screenshots for UI changes
+- Confirm clinical accuracy for new screeners
+- Ensure tests pass and no errors in console
+
+### 🔒 Privacy & Security Guidelines
+
+- Never store sensitive user data
+- Process everything client-side when possible
+- Use secure transmission for AI requests
+- Follow HIPAA-conscious design principles
+- Never commit API keys to repository
+
+### 📞 Getting Help
+
+- **GitHub Issues**: For bugs and feature requests
+- **GitHub Discussions**: For questions and general discussion
+- **Email**: abuzarmishwani@mindscreen.ai for sensitive matters
 
 ## 🛣 Roadmap
 
@@ -235,15 +377,6 @@ This project is configured for automatic deployment on Vercel:
 - Multi-language support
 - Healthcare provider dashboard
 
-## 🤝 Contributing
-
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details on how to:
-
-- Report bugs and suggest enhancements
-- Submit pull requests
-- Add new screening tools
-- Improve AI integration
-
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -253,7 +386,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Lead Developer**: [Abu Zar Mishwani](https://github.com/mishwani7) - AI & Mental Health Technology Specialist
 - Clinical assessment tools developed by mental health professionals
 - ShadCN for the beautiful UI component library
-- DeepSeek team for the advanced AI model
+- GPT-4o and DeepSeek teams for the advanced AI models
 - Open source community for the amazing tools and libraries
 
 ## 📞 Support & Contact
@@ -264,8 +397,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-<div align="center">
-  <strong>Built with ❤️ for mental health awareness and accessibility</strong>
-  <br>
-  <em>Making mental health screening accessible to everyone</em>
-</div>
+**Built with ❤️ for mental health awareness and accessibility**
+
+*Making mental health screening accessible to everyone*
